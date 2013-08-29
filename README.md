@@ -11,14 +11,23 @@ Currently it supports:
 * Traffic alerts on peak hours
 
 
+## Configuration
+
+`bootstrap.php` file has a $__config variable that needs to have the Push.co API keys properly
+configured.
+
+
 ## Usage
 
 São Paulo Agora relies on PHP to work, and each channel has its own cli command:
 
 `php run.php [command] sao-paulo`
 
-In this, [command] is either `weather`, `news` or `traffic`. When called, the most relevant data is
+In this, `[command]` is either `weather`, `news` or `traffic`. When called, the most relevant data is
 retrieved from the other services' APIs and pushed to their respective channel.
+
+Also, `sao-paulo` exists because the app has the ability to be configured for a different city, but
+this requires more implementation code.
 
 
 ## Author
